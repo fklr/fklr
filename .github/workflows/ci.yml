@@ -1,0 +1,14 @@
+name: samsara
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    name: samsara
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "ACHTUNG ACHTUNG"
+      - run: sha256sum README.md
